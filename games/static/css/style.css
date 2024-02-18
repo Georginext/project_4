@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(205, 205, 247);
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.styles{
+    border: 5px solid rgb(98, 160, 241);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(222, 222, 250);
+}
+img{
+    width: 80%;
+    height: 80%;
+}
+.styles h2{
+    border-bottom: 6px double black;
+    color: rgb(53, 53, 255);
+}
+.game_descriptions{
+    font-size: smaller;
+    margin: 0%;
+    font-style: italic;
+}
+.content{
+    border-bottom: 2px double blue;
+    font-weight: normal;
+}
+.details{
+    border-bottom: 2px solid blue;
+    font-weight: normal;
+}
+.price{
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+.page input[type = submit]{
+    font-weight: bold;
+    background-color: cornflowerblue;
+    border-radius:  10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: auto;
+}
+.page label{
+    display: block;
+    font-size: 20px;
+}
+.page input, textarea{
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    border: 0;
+    padding: 6px 10px;
+    width: 30%;
+    font-size: 20px;
+
+}
+.sign{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.Navigation h1{
+    font-weight: normal;
+    display: inline;
+}
+.Button{
+    float: right;
+    text-align: right;
+}
+.Button a{
+    text-decoration: none;
+    color: black; 
+}

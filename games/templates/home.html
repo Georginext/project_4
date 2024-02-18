@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}
+Home Page
+{% endblock title %}
+{% block content %}
+
+{% for game in game_list %}
+    <div class = 'styles'>
+        <a href="{{game.get_absolute_url}}"> <h2>{{game.name}}</h2></a>
+        {% if game.image %}
+        <a href="{{game.get_absolute_url}}"><img src="{{game.image.url}}" alt=""></a>
+        
+        {% endif %}
+        
+        <p class = 'game_descriptions'>
+            This game has been added to this website by {{game.owner}}{{game.created}}
+        </p>
+        <p class = 'game_descriptions'>
+            Date of last update: {{game.update_time}}
+        </p>
+        <h3>
+            description of game:
+        </h3>
+        <p>
+            {{game.description}}
+        </p>
+    </div>
+{% endfor %}
+{% endblock content %}

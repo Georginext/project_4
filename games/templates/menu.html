@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}
+{{game.name}}
+{% endblock title %}
+{% block content %}
+<h1 class = 'content'>
+    {{game.name}}
+</h1>
+{% if game.image %}
+<img src="{{game.image.url}}" alt="">
+{% endif %}
+<h2 class = 'details'>
+    Information of Game
+</h2>
+<p class = 'info'>
+    Game edited by {{game.owner}} at {{game.created}}
+</p>
+<p class = 'info'>
+    The Date of last update {{game.update_time}}
+</p>
+<p class = 'price'>
+    Price of Game: {{game.price}}
+</p>
+<h2 class = 'details'>
+    Description of Game
+</h2>
+<p class = 'style'>
+    {{game.description}}
+</p>
+<h2 class = 'details'>
+    Comments For Game
+</h2>
+<a href="{% url "home" %}">
+    Return Home
+</a>
+{% endblock content %}
+
